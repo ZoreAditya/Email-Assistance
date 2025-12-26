@@ -1,0 +1,25 @@
+{
+  "name": "Email Assisstant",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "permissions":["activeTab","storage"],
+  "host_permissions":["http://localhost:8080/*","*://mail.google.com/*"],
+  "manifest_version": 3,
+    "action": {
+    "default_title": "Email writer Assisstant"
+  },
+  "content_scripts": [
+  {
+    "matches": ["https://mail.google.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle",
+    "all_frames": true
+  }
+],
+  "web_accessible_resources": [
+    {
+      "resources": [ "test1.png", "test2.png" ],
+      "matches": [ "*://mail.google.com/*" ]
+    }
+  ]
+}

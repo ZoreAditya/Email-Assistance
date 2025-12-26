@@ -1,0 +1,18 @@
+.email-writer-btn {
+  height: 36px;
+  margin-left: 6px;
+  padding: 0 12px;
+  border-radius: 18px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.email-writer-btn:hover {
+  background: #d9dde2;
+}
